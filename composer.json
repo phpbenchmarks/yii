@@ -1,0 +1,10 @@
+{
+    "name": "phpbenchmarks/yii",
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "phpbenchmarks/yii-common": "dev-yii_2_rest-api"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
