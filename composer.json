@@ -4,7 +4,7 @@
     "type": "project",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2": "^2.0",
         "phpbenchmarks/yii-common": "dev-yii_2_hello-world"
     }
 }

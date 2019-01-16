@@ -17,9 +17,7 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => true,
-            'rules' => [
-            		'benchmark/helloworld'=>'helloworld/index',
-            ],
+        		'rules' => include '../vendor/phpbenchmarks/yii-common/config/routes.php',
         ],
     ],
 ];
