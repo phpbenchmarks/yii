@@ -20,5 +20,6 @@ $config = [
         		'rules' => include '../vendor/phpbenchmarks/yii-common/config/routes.php',
         ],
     ],
+		'controllerMap' => include '../vendor/phpbenchmarks/yii-common/config/controller-map.php',
 ];
 return $config;

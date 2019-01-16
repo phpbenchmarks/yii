@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09ab63f7aec9af86544e8767973f8a17",
+    "content-hash": "13e4900d2179c97760a97e862a01313c",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -198,23 +198,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpbenchmarks/yii-common.git",
-                "reference": "4120069549c2df400c891c30230e0f3aabfa5402"
+                "reference": "e179e76d834a2d80e647a71e5bd964cd4a090cc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpbenchmarks/yii-common/zipball/4120069549c2df400c891c30230e0f3aabfa5402",
-                "reference": "4120069549c2df400c891c30230e0f3aabfa5402",
+                "url": "https://api.github.com/repos/phpbenchmarks/yii-common/zipball/e179e76d834a2d80e647a71e5bd964cd4a090cc9",
+                "reference": "e179e76d834a2d80e647a71e5bd964cd4a090cc9",
                 "shasum": ""
             },
-            "require": {
-                "yiisoft/yii2": "^2.0"
-            },
             "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "PhpBenchmarksYii\\HelloWorld\\": ""
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
-            "time": "2019-01-15T23:39:53+00:00"
+            "time": "2019-01-16T00:47:40+00:00"
         },
         {
             "name": "yiisoft/yii2",
