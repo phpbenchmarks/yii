@@ -21,15 +21,24 @@ $config = [
         ],
     	'i18n' => [
     			'translations' => [
-    					'phpbenchmarks*' => [
-    							'class' => 'PhpBenchmarksYiiRest\services\FallbackPhpMessageSource',
-    							'basePath' => '@app/translations',
-    							'sourceLanguage' => 'en',
-    							'fallback'=> 'en',
-    							'fileMap' => [
-    									'benchmarks' => 'phpbenchmarks.php',
-    							],
-    					],
+    				'phpbenchmarks*' => [
+    						'class' => 'PhpBenchmarksYiiRest\services\FallbackPhpMessageSource',
+    						'basePath' => '@app/translations',
+    						'sourceLanguage' => 'en',
+    						'fallback'=> 'en',
+    						'fileMap' => [
+    								'benchmarks' => 'phpbenchmarks.php',
+    						],
+    				],
+    		],
+    	],
+    	'response' => [
+    			'formatters' => [
+    					\yii\web\Response::FORMAT_JSON => [
+    							'class' => 'yii\web\JsonResponseFormatter',
+    							'prettyPrint' => YII_DEBUG, // use "pretty" output in debug mode
+    							'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE,
+    				],
     			],
     		],
     ],
