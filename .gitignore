@@ -30,3 +30,4 @@ phpunit.phar
 #vagrant folder
 /.vagrant
 tests/*
+runtime/*

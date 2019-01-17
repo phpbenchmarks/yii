@@ -19,7 +19,20 @@ $config = [
             'showScriptName' => true,
         		'rules' => include 'routes.php',
         ],
+    	'i18n' => [
+    			'translations' => [
+    					'phpbenchmarks*' => [
+    							'class' => 'PhpBenchmarksYiiRest\services\FallbackPhpMessageSource',
+    							'basePath' => '@app/translations',
+    							'sourceLanguage' => 'en',
+    							'fallback'=> 'en',
+    							'fileMap' => [
+    									'benchmarks' => 'phpbenchmarks.php',
+    							],
+    					],
+    			],
+    		],
     ],
-		'controllerMap' => include '../vendor/phpbenchmarks/yii-common/config/controller-map.php',
+	'controllerMap' => include '../vendor/phpbenchmarks/yii-common/config/controller-map.php',
 ];
 return $config;
