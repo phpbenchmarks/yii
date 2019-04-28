@@ -30,3 +30,5 @@ phpunit.phar
 #vagrant folder
 /.vagrant
 tests/*
+
+/composer.lock
