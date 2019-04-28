@@ -31,3 +31,11 @@ phpunit.phar
 /.vagrant
 tests/*
 runtime/*
+
+composer.lock
+/translations/aa_BB
+!/translations/aa_BB/.gitkeep
+/translations/en_GB
+!/translations/en_GB/.gitkeep
+/translations/fr_FR
+!/translations/fr_FR/.gitkeep
