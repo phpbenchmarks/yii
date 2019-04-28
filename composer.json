@@ -1,10 +1,21 @@
 {
     "name": "phpbenchmarks/yii",
     "license": "proprietary",
-    "type": "project",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "^2.0",
-        "phpbenchmarks/yii-common": "dev-yii_2_hello-world"
-    }
+        "yiisoft/yii2": "2.0.18",
+        "phpbenchmarks/yii-common": "2.1.0"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
